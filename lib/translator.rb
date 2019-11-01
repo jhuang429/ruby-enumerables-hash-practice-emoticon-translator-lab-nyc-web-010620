@@ -14,8 +14,11 @@ end
 
 def get_japanese_emoticon(path, emoji)
   lib = load_library(path)
-  return = lib[:get_emoticon][emoji] 
-  return
+  x = lib[:get_emoticon][emoji] 
+  if x == nil 
+    x = "Sorry!, no emoji"
+  end
+  x
 end
 
 def get_english_meaning
