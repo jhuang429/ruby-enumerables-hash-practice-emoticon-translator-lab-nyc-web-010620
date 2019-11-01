@@ -7,7 +7,7 @@ def load_library(str)
   library = YAML.load_file(str)
   library.each do |key, value| 
     result[:get_meaning][value[0]] = key
-    result[:get_emoticon][value[1]] = value[0]
+    result[:get_emoticon][value[0]] = value[1]
   end
   result
 end
