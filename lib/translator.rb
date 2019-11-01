@@ -23,7 +23,7 @@ end
 
 def get_english_meaning (path, emoji)
   lib = load_library(path)
-  y = lib[:get_meanign][emoji] 
+  y = lib[:get_meaning][emoji] 
 if y == nil 
     y = "Sorry, that meaning was not found"
   end
