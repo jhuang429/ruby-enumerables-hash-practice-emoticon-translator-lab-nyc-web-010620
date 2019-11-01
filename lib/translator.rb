@@ -2,9 +2,10 @@
 
 
 def load_library(str)
+  result = {
   require "yaml"
   library = YAML.load_file(str)
-  p library
+  library
 end
 
 def get_japanese_emoticon
