@@ -23,6 +23,6 @@ end
 
 def get_english_meaning (path, emoji)
   lib = load_library(path)
-  y = libv
+  y =
 end
 
