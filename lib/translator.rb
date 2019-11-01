@@ -2,7 +2,7 @@
 
 
 def load_library(str)
-  result = {:get_meaning => {}, :get_emoitcon = {}}
+  result = {:get_meaning => {}, :get_emoitcon => {}}
   require "yaml"
   library = YAML.load_file(str)
   library.each do |key, value| 
