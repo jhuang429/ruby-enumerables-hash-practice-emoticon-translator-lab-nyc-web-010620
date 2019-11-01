@@ -6,7 +6,8 @@ def load_library(str)
   require "yaml"
   library = YAML.load_file(str)
   library.each do |key, value| 
-    result[:get_meaning][value[1]] = key   
+    result[:get_meaning][value[0]] = key
+    result[:get_emoitcon][value[1]] = value[0]
   end
   result
 end
