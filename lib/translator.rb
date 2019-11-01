@@ -6,7 +6,7 @@ def load_library(str)
   require "yaml"
   library = YAML.load_file(str)
   library.each do |key, value| 
-    result[:get_meaning][value[0]] = key
+    result[:get_meaning][value[1]] = key
     result[:get_emoticon][value[0]] = value[1]
   end
   result
