@@ -12,8 +12,9 @@ def load_library(str)
   result
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(path, emoji)
+  lib = load_library(path)
+  lib[:get_emoticon][emoji]
 end
 
 def get_english_meaning
