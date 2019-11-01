@@ -25,7 +25,7 @@ def get_english_meaning (path, emoji)
   lib = load_library(path)
   y = lib[:get_meanign][emoji] 
 if y == nil 
-    y = "Sorry, that emoticon was not found"
+    y = "Sorry, that meaning was not found"
   end
   y
 end
